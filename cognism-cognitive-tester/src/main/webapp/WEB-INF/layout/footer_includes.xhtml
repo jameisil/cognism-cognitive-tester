@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">   
+
+
+    <!-- JS Global Compulsory -->			
+    <script type="text/javascript" src="#{request.contextPath}/resources/assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="#{request.contextPath}/resources/assets/plugins/jquery/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="#{request.contextPath}/resources/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="#{request.contextPath}/resources/assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="#{request.contextPath}/resources/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="#{request.contextPath}/resources/assets/plugins/parallax-slider/js/modernizr.js"></script>
+    <script type="text/javascript" src="#{request.contextPath}/resources/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+    <!-- JS Customization -->
+    <script type="text/javascript" src="#{request.contextPath}/resources/assets/js/custom.js"></script>
+    <!-- JS Page Level -->           
+    <script type="text/javascript" src="#{request.contextPath}/resources/assets/js/app.js"></script>
+    <script type="text/javascript" src="#{request.contextPath}/resources/assets/js/plugins/parallax-slider.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            App.init();
+            App.initSliders();
+            ParallaxSlider.initParallaxSlider();
+        });
+    </script>
+    <!--[if lt IE 9]>
+        <script src="assets/plugins/respond.js"></script>
+        <script src="assets/plugins/html5shiv.js"></script>
+        <script src="assets/js/plugins/placeholder-IE-fixes.js"></script>
+    <![endif]--> 
+
+
+</html>
+

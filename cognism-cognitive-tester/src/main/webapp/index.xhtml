@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"    
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"     
+      xmlns:jsf="http://xmlns.jcp.org/jsf"         
+      xmlns:passthrough="http://xmlns.jcp.org/jsf/passthrough"     
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">     
+
+    <f:view contracts="default" transient="false">
+        <ui:composition template="/template.xhtml">              
+            <ui:define name="content">   
+                <h:form id="mainFormId">                   
+
+                    <!--=== Purchase Block ===-->
+                    <div class="purchase">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9 animated fadeInLeft">
+                                    <span>Cognition: Let's start by analyzing a  document</span>
+                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi  vehicula sem ut volutpat. Ut non libero magna fusce condimentum eleifend enim a feugiat corrupti quos.</p>
+                                </div>            
+                                <div class="col-md-3 btn-buy animated fadeInRight">
+                                    <a href="analysis.jsf" class="btn-u btn-u-lg"><i class="fa fa-cloud-download"></i>Start Free</a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div><!--/row-->
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </f:view>
+</html>

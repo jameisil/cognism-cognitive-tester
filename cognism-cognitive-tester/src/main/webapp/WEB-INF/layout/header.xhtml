@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">   
+
+    <div class="header">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <!-- Topbar Navigation -->
+                <ul class="loginbar pull-right">
+
+                    <li class="topbar-devider"></li>   
+                    <li><a href="#">Help</a></li>  
+                    <li class="topbar-devider"></li>   
+                    <li><a href="#">Login</a></li>   
+                </ul>
+                <!-- End Topbar Navigation -->
+            </div>
+        </div>
+        <div class="navbar navbar-default mega-menu" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <a class="navbar-brand" href="#{request.contextPath}/index.jsf">
+                        <img id="logo-header" src="#{request.contextPath}/resources/assets/img/logo1-default.png" alt="Logo"/>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Home -->
+                        <li class="dropdown active">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a href="#{request.contextPath}/index.jsf">Option 1: Default Page</a></li>
+
+                                <!-- One Page -->
+                                <li class="dropdown-submenu">
+                                    <a href="javascript:void(0);">Option 2: One Page</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a target="_blank" href="#">- One Page Template</a></li>                                
+                                        <li><a target="_blank" href="#">- One Page Dark Theme</a></li>                                
+                                    </ul>                                
+                                </li>
+                                <!-- End One Page -->
+
+                                <!-- Shop UI Page -->
+                                <li class="dropdown-submenu">
+                                    <a href="javascript:void(0);">Option 3: Shop UI</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a target="_blank" href="#">- Home Page</a></li>
+                                        <li><a target="_blank" href="#">- Product Page</a></li>
+
+                                        <li><a target="_blank" href="#">- Login Page</a></li>                               
+                                        <li><a target="_blank" href="#">- Registration Page</a></li>
+                                    </ul>                                
+                                </li>
+                                <!-- End Shop UI -->
+                            </ul>
+                        </li>
+                        <!-- End Home -->
+                        <!-- Pages -->                        
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- About Pages -->
+                                <li class="dropdown-submenu">
+                                    <a href="javascript:void(0);">About Pages</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">About Us</a></li>                                       
+                                        <li><a href="#">About Me</a></li>
+                                        <li><a href="#">About Our Team</a></li>
+                                    </ul>                                
+                                </li>                             
+
+
+                                <li><a href="#">Invoice Page</a></li>
+
+                                <li><a href="#">Coming Soon</a></li>
+
+                                <li><a href="#">Gallery Page</a></li>
+
+                                <li><a href="#">Privacy Policy</a></li>
+                                <!-- Terms Of Service -->
+                                <li><a href="#">Terms Of Service</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                Contacts
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Contacts Default</a></li>
+
+                            </ul>
+                        </li>                    
+
+                        <li>
+                            <i class="search fa fa-search search-btn"></i>
+                            <div class="search-open">
+                                <div class="input-group animated fadeInDown">
+                                    <input type="text" class="form-control" placeholder="Search"/>
+                                    <span class="input-group-btn">
+                                        <button class="btn-u" type="button">Go</button>
+                                    </span>
+                                </div>
+                            </div>    
+                        </li>
+                        <!-- End Search Block -->
+                    </ul>
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+    </div>  
+
+</html>
+
