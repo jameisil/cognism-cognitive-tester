@@ -12,21 +12,46 @@
     <f:view contracts="default" transient="false">
         <ui:composition template="/template.xhtml">              
             <ui:define name="content">   
-                <h:form id="mainFormId">                   
-
+                <h:form id="mainFormId">
                     <!--=== Purchase Block ===-->
+                    <p:growl/>
                     <div class="purchase">
                         <div class="container">
-                           
                             <div class="row">
-                               <span>Put Your text here....</span>
+                                <span>Put Your text here....</span>
                                 <div class="row margin-bottom-20">
                                     <div class="col-md-6 col-md-offset-0">
-                                        <p:inputTextarea rows="8" cols="80" counter="display" styleClass="form-control" maxlength="1000000" counterTemplate="{0} characters remaining." autoResize="false" />
+                                        <p:inputTextarea rows="8" cols="80" required="true" value="#{restClientBean.content}" counter="display" styleClass="form-control" maxlength="1000000" counterTemplate="{0} characters remaining." autoResize="false" />
                                         <h:outputText id="display" />
-                                    </div>                
+                                        <p>                                         
+                                       
+                                        <button jsf:action="#{restClientBean.clear()}" type="submit" jsf:immediate="true"  class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Clear</button>
+                                       <h:outputText value=" "/>
+                                        <button jsf:action="#{restClientBean.sendContent()}" type="submit" class="btn btn-success btn-xs"><i class="fa fa-check"></i> Start Analysis</button>
+                                        </p>
+                                       
+                                    </div>                                    
                                 </div>
-                                <p><button type="submit" class="btn-u">Start Analysis</button></p>
+                            </div>
+                            <div class="row">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Phrase</th>
+                                            <th class="hidden-sm">Sentiment</th>
+                                            <th>Sentiment Score</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <ui:repeat value="#{restClientBean.resultList}" var="list">
+                                        <tr>
+                                            <td class="hidden-sm">#{list.phrase}</td>
+                                            <td class="hidden-sm">#{list.sentiment}</td>
+                                            <td class="hidden-sm">#{list.sentimentScore}</td>
+                                            <td><button type="button" class="btn btn-info btn-xs"><i class="fa fa-share"></i> Share</button></td>
+                                        </tr>                                           
+                                    </ui:repeat>
+                                </table>
                             </div>
                         </div>
                     </div><!--/row-->
